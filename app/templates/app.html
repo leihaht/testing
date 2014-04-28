@@ -1,0 +1,22 @@
+<!-- Template for App View -->
+<div class="container">
+  <div class="col-sm-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% _.each(users, function(user){ %>
+        <tr>
+          <td><%= user.get('name') %></td>
+          <td><%= user.get('age') %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary">확인</button>
+  </div>
+</div>
